@@ -77,7 +77,7 @@ const Main = () => {
             </Route>
             ////// CLEAN SHOW ROUTE /////
             <Route 
-                path="/food/:id"
+                path="/clean/:id"
                 render={(rp) => (
                     <CleanShow 
                         clean={clean}
@@ -91,7 +91,7 @@ const Main = () => {
             </Route>
             ////// OTHER SHOW ROUTE /////
             <Route 
-                path="/food/:id"
+                path="/other/:id"
                 render={(rp) => (
                     <OtherShow 
                         other={other}

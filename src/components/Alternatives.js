@@ -6,6 +6,8 @@ const Alternatives = (props) => {
         description: ""
     })
 
+//////// NEEDS TO RECEIVE THE LIST OF ALTERNATIVES FROM THE API AS PROPS PASSED DOWN FROM THE SHOW PAGE.  THEN WE NEED TO MAP OVER THEM AND DISPLAY THEM BELOW THE FORM.//////////////
+
     const handleChange = (e) => {
         setNewForm({...newForm, [e.target.name]: e.target.value})
     }
