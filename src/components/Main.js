@@ -16,6 +16,7 @@ const Main = () => {
             <Route exact path="/">
                 <Home />
             </Route>
+            
         </Switch>
     </main>
   )
