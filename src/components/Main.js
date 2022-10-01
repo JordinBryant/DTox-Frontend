@@ -17,6 +17,7 @@ const Main = () => {
             <Route exact path="/">
                 <Home />
             </Route>
+ 
             ///// FOOD INDEX ROUTE ////
             <Route path="/food">
                 <FoodIndex />
@@ -56,6 +57,9 @@ const Main = () => {
                     />
                 )}
             />
+
+            
+
         </Switch>
     </main>
   )
