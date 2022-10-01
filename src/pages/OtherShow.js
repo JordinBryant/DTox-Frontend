@@ -1,8 +1,11 @@
 import React from 'react'
+import Alternatives from '../components/Alternatives';
 
 const OtherShow = () => {
   return (
-    <div>OtherShow</div>
+    <div>
+        <Alternatives />
+    </div>
   )
 }
 

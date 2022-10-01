@@ -1,8 +1,11 @@
 import React from 'react'
+import Alternatives from '../components/Alternatives';
 
 const FoodShow = () => {
   return (
-    <div>FoodShow</div>
+    <div>
+        <Alternatives />
+    </div>
   )
 }
 
