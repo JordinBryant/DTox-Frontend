@@ -1,8 +1,11 @@
 import React from 'react'
+import Alternatives from '../components/Alternatives';
 
 const CleanShow = () => {
   return (
-    <div>CleanShow</div>
+    <div>
+        <Alternatives />
+    </div>
   )
 }
 
