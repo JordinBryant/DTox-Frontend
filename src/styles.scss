@@ -1,0 +1,29 @@
+* {
+    margin: 0px;
+    padding: 2px;
+}
+
+
+nav {
+    background-color: rgb(201, 234, 201);
+    height: 80px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+    li {display: inline-block;}
+
+    a {
+      text-decoration: none; 
+      color:rgb(44, 30, 30);
+      font-size: 15px;
+      font-weight: bold; 
+      font-family: 'Lora', serif;
+      padding: 10px 12px;
+    }
+
+
