@@ -17,9 +17,9 @@ const Main = () => {
     const [other, setOther] = useState(null);
 
 /////////// Needs API URLs below //////////////////////
-    const foodURL = "";
-    const cleanURL = "";
-    const otherURL = "";
+    const foodURL = "https://dtox-backend.herokuapp.com/food";
+    const cleanURL = "https://dtox-backend.herokuapp.com/clean";
+    const otherURL = "https://dtox-backend.herokuapp.com/other";
 
 ////////// FUNCTIONS TO FETCH THE DATA FROM THE API /////////    
     const getFood = async () => {
