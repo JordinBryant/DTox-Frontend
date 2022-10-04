@@ -1,5 +1,5 @@
 import React from 'react'
-import Alternatives from '../components/Alternatives';
+import Alternatives from '../components/AlternClean';
 
 const CleanShow = (props) => {
     const id = props.match.params.id;
