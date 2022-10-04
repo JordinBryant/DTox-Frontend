@@ -1,55 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
 * {
-    
     margin: 0px;
     padding: 2px;
-
 }
-
 
 nav {
     background-color: rgb(189, 228, 189);
     height: 80px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-}
-    li {display: inline-block;}
-        
+
+    #homepage {
+        text-shadow: 0px 4px 4px #282828;
+    }
 
     a {
-      text-decoration: none; 
-      color:rgb(70, 52, 52);
-      justify-content:space-between;
-      font-size: 20px;
-      font-weight: bold; 
-      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-       
+        color: black;
+        font-family: 'Source Code Pro', monospace; 
+        font-size: 40px;
+        margin: auto 50px;
+        :hover{
+            color: white;
+            font-weight: 600;
+        }
     }
-   .nav a{
-    display:inline-flex;
-    align-items:flex-start;
-    color:rgb(192, 22, 22)
-    
-   
+}
 
 
-   }
-
-    .nav ul li a {
-        color:black;
-      
-
+.page-footer {
+    background-color: rgb(189, 228, 189);
+    display: flex;
+    align-content: end;
+    h5 {
+        font-family: 'Source Code Pro', monospace;
+        font-weight: bold;
+        font-size: 40px;
     }
-
-    .page-footer {
-        background-color: rgb(189, 228, 189);
-        display:flex;
-        align-content: end;
-        
+    p {
+        font-family: 'Source Code Pro', monospace;
+        font-size: 30px
     }
-    
-   
+}
+
+.video {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home h1 {
+    font-size: 500px;
+    z-index: 1;
+    position: absolute;
+    color: white;
+    margin: 20vh 20vh 20vh 20vh;
+    font-family: 'Source Code Pro', monospace;
+}
