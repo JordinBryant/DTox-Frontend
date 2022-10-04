@@ -1,5 +1,5 @@
 import React from 'react'
-import Alternatives from '../components/AlternClean';
+
 
 const OtherShow = (props) => {
   

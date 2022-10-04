@@ -5,10 +5,10 @@ const Home = () => {
   return (
     <div className="home">
       <h1>DTox</h1>
-      <video autoPlay loop muted>
-        <source src={video} type="video/ogg" />
-      </video>
-    </div>
+        <video className="video" autoPlay loop muted>
+          <source src={video} type="video/ogg" />
+        </video>
+    </div >
   )
 }
 

@@ -2,6 +2,7 @@ import { login, logout } from '../services/firebase';
 import { Link } from 'react-router-dom'
 import React from 'react'
 const Header = () => {
+
     return (
         <nav classname="nav"
             style={{
@@ -43,6 +44,25 @@ const Header = () => {
             </div>
         </nav>
     );
+  return (
+
+    <nav classname="nav">
+        <Link id="homepage" to="/">
+            <div>DTox</div>
+
+        </Link>
+        <Link to="/food">
+            <div>FOOD</div>
+        </Link>
+        <Link to="/clean">
+            <div>CLEANING PRODUCTS</div>
+        </Link>
+        <Link to="/other">
+            <div>OTHER PRODUCTS</div>
+        </Link>
+    </nav>
+  )
+
 }
 
 
