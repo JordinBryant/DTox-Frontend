@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   return (
     <nav classname="nav">
-        <Link to="/">
-            <div>HOME</div>
+        <Link id="homepage" to="/">
+            <div>DTox</div>
         </Link>
         <Link to="/food">
             <div>FOOD</div>
