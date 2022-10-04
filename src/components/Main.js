@@ -8,7 +8,6 @@ import CleanShow from '../pages/CleanShow';
 import OtherIndex from '../pages/OtherIndex';
 import OtherShow from '../pages/OtherShow';
 
-
 const Main = () => {
 
 //////// SET STATE /////////////////////////////////////    
