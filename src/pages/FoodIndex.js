@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import Alternatives from '../components/Alternatives';
 
 const FoodIndex = (props) => {
     
@@ -26,6 +27,8 @@ const FoodIndex = (props) => {
         <h1>Chemicals Commonly Found in Foods</h1>
         <h3>Select a chemical below to see more!</h3>
         {props.food ? loaded() : loading()}
+        <h1>Healthy Alternative Options</h1>
+    <Alternatives />
 
     </div>
   )

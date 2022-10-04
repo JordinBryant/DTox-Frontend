@@ -57,7 +57,7 @@ const Main = () => {
             </Route>
  
             ///// FOOD INDEX ROUTE ////
-            <Route path="/food">
+            <Route  exact path="/food">
                 <FoodIndex food={food}/>
             </Route>
             ///// FOOD SHOW ROUTE ////
@@ -71,7 +71,7 @@ const Main = () => {
                 )}
             />
             ///// CLEAN INDEX ROUTE //////
-            <Route path="/clean">
+            <Route exact path="/clean">
                 <CleanIndex clean={clean}/>
             </Route>
             ////// CLEAN SHOW ROUTE /////
@@ -85,7 +85,7 @@ const Main = () => {
                 )}
             />
             ////// OTHER INDEX ROUTE /////
-            <Route path="/other">
+            <Route exact path="/other">
                 <OtherIndex other={other}/>
             </Route>
             ////// OTHER SHOW ROUTE /////

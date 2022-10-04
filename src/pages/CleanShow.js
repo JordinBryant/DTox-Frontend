@@ -19,7 +19,6 @@ const CleanShow = (props) => {
         )
     })
 
-//////// NEED TO MAKE A FETCH CALL TO CLEAN ALTERNATIVES API AND SET STATE AND PASS IT TO ALTERNATIVES AS PROPS////////
 
 
   return (
@@ -29,7 +28,7 @@ const CleanShow = (props) => {
             <h5>{description}</h5>
             {productList}
         </div>
-        <Alternatives />
+        
     </div>
   )
 }
