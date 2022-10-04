@@ -31,7 +31,7 @@ const FoodShow = (props) => {
             <h5>{description}</h5>
             {productList}
         </div>
-        <Alternatives />
+        
     </div>
   )
 }
