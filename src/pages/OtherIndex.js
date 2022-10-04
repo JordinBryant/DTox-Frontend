@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import Alternatives from '../components/Alternatives';
 
 
 const OtherIndex = (props) => {
@@ -28,6 +29,8 @@ return (
       <h1>Chemicals Commonly Found in Other Products</h1>
       <h3>Select a chemical below to see more!</h3>
       {props.other ? loaded() : loading()}
+      <h1>Healthy Alternative Options</h1>
+    <Alternatives />
   </div>
 )
 }
