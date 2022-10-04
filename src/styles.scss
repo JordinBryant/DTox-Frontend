@@ -2,14 +2,15 @@
     
     margin: 0px;
     padding: 2px;
+
 }
 
 
 nav {
-    background-color: rgb(201, 234, 201);
+    background-color: rgb(189, 228, 189);
     height: 80px;
     display:flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items:center;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
@@ -17,19 +18,38 @@ nav {
     border-bottom-right-radius: 20px;
 }
     li {display: inline-block;}
+        
 
     a {
       text-decoration: none; 
-      color:rgb(44, 30, 30);
-      font-size: 15px;
+      color:rgb(70, 52, 52);
+      justify-content:space-between;
+      font-size: 20px;
       font-weight: bold; 
       font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
        
     }
+   .nav a{
+    display:inline-flex;
+    align-items:flex-start;
+    color:rgb(192, 22, 22)
+    
+   
 
-    .Home {
-        background-color: rgb(240, 245, 236);
-        height:500px;
+
+   }
+
+    .nav ul li a {
+        color:black;
+      
+
     }
 
+    .page-footer {
+        background-color: rgb(189, 228, 189);
+        display:flex;
+        align-content: end;
+        
+    }
+    
    
