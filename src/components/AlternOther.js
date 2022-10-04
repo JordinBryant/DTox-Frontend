@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-const Alternatives = (props) => {
+const AlternOther = (props) => {
     const [newForm, setNewForm] = useState({
         name: "",
         description: "",
@@ -26,7 +26,7 @@ const Alternatives = (props) => {
 
     //////// Loaded function ///////
     const loaded = () => {
-        return props.cleanAlt.map((alt) => {
+        return props.otherAlt.map((alt) => {
             return (
                 <div className="altDiv">
                     <h3>{alt.name}</h3>
@@ -65,9 +65,9 @@ const Alternatives = (props) => {
                 value="Create Alternative"
             />
         </form>
-        { props.cleanAlt ? loaded() : loading()}
+        { props.otherAlt ? loaded() : loading()}
     </section>
   )
 }
 
-export default Alternatives;
+export default AlternOther;

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom';
-import Alternatives from '../components/Alternatives';
+import AlternClean from '../components/AlternClean';
 
 const CleanIndex = (props) => {
 
@@ -44,7 +44,7 @@ return (
     <h3>Select a chemical below to see more!</h3>
     {props.clean ? loaded() : loading()}
     <h1>Healthy Alternative Options</h1>
-    <Alternatives cleanAlt={cleanAlt}/>
+    <AlternClean cleanAlt={cleanAlt}/>
 
 </div>
 )

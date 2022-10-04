@@ -1,9 +1,13 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { Link } from "react-router-dom";
-import Alternatives from '../components/Alternatives';
+import AlternOther from '../components/AlternOther';
 
 
 const OtherIndex = (props) => {
+
+    const [otherAlt, setOtherAlt] = useState(null)
+
+    const altURL = "https://dtox-backend.herokuapp.com/altother"
  
  /////// LOADING FUNCTION TO DISPLAY JUST THE CHEMICAL NAMES ///////
  const loaded = () => {
@@ -21,7 +25,15 @@ const loading = () => {
   return <h1>Loading . . .</h1>
 }
 
- 
+const getAlt = async () => {
+    const response = await fetch(altURL);
+    const data = await response.json();
+    setOtherAlt(data);
+}
+
+useEffect(() => {
+    getAlt();
+}, [])
 
 
 return (
@@ -30,7 +42,7 @@ return (
       <h3>Select a chemical below to see more!</h3>
       {props.other ? loaded() : loading()}
       <h1>Healthy Alternative Options</h1>
-    <Alternatives />
+      <AlternOther otherAlt={otherAlt}/>
   </div>
 )
 }
