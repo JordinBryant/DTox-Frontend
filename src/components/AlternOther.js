@@ -61,6 +61,13 @@ const AlternOther = (props) => {
                 onChange={handleChange}
             />
             <input 
+                type="text"
+                name="img"
+                value={newForm.img}
+                placeholder="image url"
+                onChange={handleChange}
+            />
+            <input 
                 type="submit"
                 value="Create Alternative"
             />

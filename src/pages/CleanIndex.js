@@ -4,9 +4,7 @@ import AlternClean from '../components/AlternClean';
 
 const CleanIndex = (props) => {
 
-    const [cleanAlt, setCleanAlt] = useState(null)
 
-    const altURL = "https://dtox-backend.herokuapp.com/altclean"
 
   /////// LOADING FUNCTION TO DISPLAY JUST THE CHEMICAL NAMES ///////
   const loaded = () => {
@@ -25,18 +23,6 @@ const loading = () => {
     return <h1>Loading . . .</h1>
 }
 
-const getAlt = async () => {
-    const response = await fetch(altURL);
-    const data = await response.json();
-    setCleanAlt(data);
-}
-
-useEffect(() => {
-    getAlt();
-}, [])
-
-
-//console.log(cleanAlt);
 
 return (
 <div>
@@ -44,7 +30,7 @@ return (
     <h3>Select a chemical below to see more!</h3>
     {props.clean ? loaded() : loading()}
     <h1>Healthy Alternative Options</h1>
-    <AlternClean cleanAlt={cleanAlt}/>
+    <AlternClean />
 
 </div>
 )
