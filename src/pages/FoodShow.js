@@ -3,6 +3,8 @@ import Alternatives from '../components/Alternatives';
 
 const FoodShow = (props) => {
 
+    console.log(props)
+
     const id = props.match.params.id;
     const chemicals = props.food;
     const foundChemical = chemicals.find((c) => id === c._id);

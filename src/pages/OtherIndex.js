@@ -27,8 +27,7 @@ return (
   <div>
       <h1>Chemicals Commonly Found in Other Products</h1>
       <h3>Select a chemical below to see more!</h3>
-      {/* ///////// ternary statement to load the list ///////////*/}
-
+      {props.other ? loaded() : loading()}
   </div>
 )
 }

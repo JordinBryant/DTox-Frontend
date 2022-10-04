@@ -25,7 +25,7 @@ return (
 <div>
     <h1>Chemicals Commonly Found in Cleaning Products</h1>
     <h3>Select a chemical below to see more!</h3>
-    {/* ///////// ternary statement to load the list ///////////*/}
+    {props.clean ? loaded() : loading()}
 
 </div>
 )

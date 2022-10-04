@@ -25,7 +25,7 @@ const FoodIndex = (props) => {
     <div>
         <h1>Chemicals Commonly Found in Foods</h1>
         <h3>Select a chemical below to see more!</h3>
-        {/* ///////// ternary statement to load the list ///////////*/}
+        {props.food ? loaded() : loading()}
 
     </div>
   )
