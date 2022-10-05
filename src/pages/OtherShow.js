@@ -27,7 +27,9 @@ return (
       <div className="showDiv">
           <h1>{chemical}</h1>
           <h5>{description}</h5>
-          {productList}
+          <div className="productContainer">
+                {productList}
+            </div>
       </div>
       
   </div>
