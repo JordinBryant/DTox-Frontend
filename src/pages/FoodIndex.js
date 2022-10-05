@@ -44,8 +44,9 @@ const FoodIndex = (props) => {
 
 
     return (
-        <div id="foodPage-container">
+        <div>
             <h1 id="foodQuote">"The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking." -Albert Einstein</h1>
+            <div id="foodPage-container">
             <section id="food">
                 <h1 id="chemFood">Commonly Found Chemicals in Food</h1>
                 <h3 id="subFood">Unvail Products Below</h3>
@@ -55,6 +56,7 @@ const FoodIndex = (props) => {
                 <h1 id="foodAltTitle">Healthy Alternative Options</h1>
                 <AlternFood foodAlt={foodAlt} />
             </section>
+            </div>
         </div>
     )
 

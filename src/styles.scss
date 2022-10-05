@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
+
 * {
     margin: 0px;
-    padding: 2px; 
+    padding: 2px;
 
 }
 
@@ -23,10 +24,11 @@ nav {
 
     a {
         color: black;
-        font-family: 'Source Code Pro', monospace; 
+        font-family: 'Source Code Pro', monospace;
         font-size: 40px;
         margin: auto 50px;
-        :hover{
+
+        :hover {
             color: white;
             font-weight: 600;
         }
@@ -38,11 +40,13 @@ nav {
     background-color: rgb(189, 228, 189);
     display: flex;
     align-content: end;
+
     h5 {
         font-family: 'Source Code Pro', monospace;
         font-weight: bold;
         font-size: 40px;
     }
+
     p {
         font-family: 'Source Code Pro', monospace;
         font-size: 30px
@@ -67,16 +71,39 @@ nav {
     font-family: 'Source Code Pro', monospace;
 }
 
-#foodPage-container {
+#foodQuote {
+    color: grey;
+    font-family: 'Passions Conflict', cursive;
+    text-align: center;
     background-color:rgb(234, 255, 234);
-    display: grid;
-    #foodQuote {
-        color: grey;
-        font-family: 'Passions Conflict', cursive;
-        text-align: center;
-    }
+    margin: 0;
+}
+
+#foodPage-container {
+    background-color: rgb(234, 255, 234);
+    display: flex;
+
     #food {
-        
+        display: inline-block;
+        #chemFood {
+            text-align: center;
+            font-size: 40px;
+            
     }
 
+    .foodAlt {
+        display: inline-block;
+        #foodAltTitle {
+            font-size: 40px;
+        }
+    }
+}
+
+}
+
+#foodimg {
+    width: 400px;
+    height: 400px;
+    border-radius: 90px;
+    object-fit: cover;
 }
