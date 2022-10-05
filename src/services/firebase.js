@@ -23,9 +23,14 @@
 //   const auth = firebase.auth();
 //   const provider = new firebase.auth.GoogleAuthProvider();
 
+function login(){
+    return auth.signInWithPopup(provider);
+}
+
 // function login(){
 //     return auth,signInWithPopup(provider);
 // }
+
 
 // function logout() {
 //     return auth.signOut();

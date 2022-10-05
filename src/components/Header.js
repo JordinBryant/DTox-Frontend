@@ -1,11 +1,9 @@
 import { login, logout } from '../services/firebase';
 import { Link } from 'react-router-dom'
 import React from 'react'
-const Header = () => {
 
 
-    
-
+function Header(props){
     return (
         <nav classname="nav"
             style={{
@@ -28,6 +26,17 @@ const Header = () => {
             </Link>
            
             <div style={{ display:'flex'}}>
+                {
+                    props.user ?
+                    <div
+                     onClick={logout}
+                        style={{
+                        cursor: 'pointer',
+                        marginRight: 10
+                    }}>
+                    logout
+                </div>
+                :
                 <div
                     onClick={login}
                     style={{
@@ -36,15 +45,9 @@ const Header = () => {
                     }}>
                     Login
                 </div>
-                <div
-                    onClick={logout}
-                    style={{
-                        cursor: 'pointer',
-                        marginRight: 10
-                    }}>
-                    logout
-                </div>
-            </div>
+            }
+               </div>
+                
         </nav>
     );
   return (
