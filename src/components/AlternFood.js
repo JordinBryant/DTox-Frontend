@@ -66,10 +66,10 @@ const AlternFood = (props) => {
         return foodAlt.map((alt) => {
             return (
                 <div key={alt._id} className="altDiv">
-                    <h3>{alt.name}</h3>
-                    <h6>{alt.description}</h6>
+                    <h3 id="altname">{alt.name}</h3>
+                    <h6 id="altdescription">{alt.description}</h6>
                     <img id="foodimg" src={alt.img} alt={alt.name}/>
-                    <button onClick={() => {deleteAlt(alt._id)}}>
+                    <button id="deletebtn" onClick={() => {deleteAlt(alt._id)}}>
                         DELETE
                     </button>
                 </div>
@@ -83,31 +83,30 @@ const AlternFood = (props) => {
       };
     
   return (
-    <section>
-        <h2>You can keep track of them here:</h2>
+    <section id="altsection">
         <form onSubmit={handleSubmit}>
             <input 
                 type="text"
                 name="name"
                 value={newForm.name}
-                placeholder="name of alternative"
+                placeholder="Name of Alternative"
                 onChange={handleChange}
             />
             <input 
                 type="text"
                 name="description"
                 value={newForm.description}
-                placeholder="description"
+                placeholder="Description"
                 onChange={handleChange}
             />
             <input 
                 type="text"
                 name="img"
                 value={newForm.img}
-                placeholder="image url"
+                placeholder="Image URL"
                 onChange={handleChange}
             />
-            <input 
+            <input id="submitAlt"
                 type="submit"
                 value="Create Alternative"
             />
