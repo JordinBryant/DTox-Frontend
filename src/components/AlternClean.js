@@ -52,8 +52,6 @@ const AlternClean = (props) => {
     
     ///////////// FUNCTION TO DELETE AN ALT ///////////////////
     const deleteAlt = async (id) => {
-        console.log("This is the id", id)
-        console.log("this is the url", altURL)
         
         await fetch(altURL + id, {
           method: "DELETE",

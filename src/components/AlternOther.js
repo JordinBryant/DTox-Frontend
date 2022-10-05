@@ -52,14 +52,27 @@ const AlternOther = (props) => {
         getAlt()
       }
 
+      ///////////// FUNCTION TO DELETE AN ALT ///////////////////
+    const deleteAlt = async (id) => {
+        
+        await fetch(altURL + id, {
+          method: "DELETE",
+        })
+        
+        getAlt();
+      }
+
     //////// Loaded function ///////
     const loaded = () => {
         return otherAlt.map((alt) => {
             return (
-                <div className="altDiv">
+                <div key={alt._id} className="altDiv">
                     <h3>{alt.name}</h3>
                     <h6>{alt.description}</h6>
                     <img src={alt.img} alt={alt.name}/>
+                    <button onClick={() => {deleteAlt(alt._id)}}>
+                        DELETE
+                    </button>
                 </div>
             )
         })
