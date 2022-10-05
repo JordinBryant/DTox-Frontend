@@ -79,15 +79,12 @@ const AlternClean = (props) => {
     //console.log(cleanAlt);
     
 
-    ////////// function to delete an alternative ////////////
-    // const removeAlt = (id) => {
-    //     deleteAlt(id);
-    //     
-    // }
+    
 
     //////// Loaded function ///////
     const loaded = () => {
         return cleanAlt.map((alt) => {
+            //console.log("image url", alt.img)
             return (
                 <div key={alt._id} className="altDiv">
                     <h3>{alt.name}</h3>

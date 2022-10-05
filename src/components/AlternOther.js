@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 
 const AlternOther = (props) => {
     const [newForm, setNewForm] = useState({
@@ -6,6 +6,10 @@ const AlternOther = (props) => {
         description: "",
         img: ""
     })
+
+    const [otherAlt, setOtherAlt] = useState(null)
+
+    const altURL = "https://dtox-backend.herokuapp.com/altother/"
 
 //////// NEEDS TO RECEIVE THE LIST OF ALTERNATIVES FROM THE API AS PROPS PASSED DOWN FROM THE SHOW PAGE.  THEN WE NEED TO MAP OVER THEM AND DISPLAY THEM BELOW THE FORM.//////////////
     
@@ -16,7 +20,7 @@ const AlternOther = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        ////// call a function that will be defined in the index pages to update state in the index pages to add/post this new alternative to the alternatives database. The index page will also render the list of alternatives.
+        createAlt(newForm)
         setNewForm({
             name: "",
             description: "",
@@ -24,9 +28,33 @@ const AlternOther = (props) => {
         })
     }
 
+    const getAlt = async () => {
+        const response = await fetch(altURL);
+        const data = await response.json();
+        setOtherAlt(data);
+    }
+    
+    useEffect(() => {
+        getAlt();
+    }, [])
+
+    ///////////// FUNCTION TO CREATE A NEW ALTERNATIVE //////////////
+    const createAlt = async (alt) => {
+        await fetch(altURL, {
+            method: "POST",
+            headers: {
+                "Content-Type": "Application/json",
+            },
+        
+            body: JSON.stringify(alt)
+        })
+        
+        getAlt()
+      }
+
     //////// Loaded function ///////
     const loaded = () => {
-        return props.otherAlt.map((alt) => {
+        return otherAlt.map((alt) => {
             return (
                 <div className="altDiv">
                     <h3>{alt.name}</h3>
@@ -72,7 +100,7 @@ const AlternOther = (props) => {
                 value="Create Alternative"
             />
         </form>
-        { props.otherAlt ? loaded() : loading()}
+        { otherAlt ? loaded() : loading()}
     </section>
   )
 }
