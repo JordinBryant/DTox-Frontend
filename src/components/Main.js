@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+
 import { Route, Switch } from "react-router-dom";
 import Home from '../pages/Home';
 import FoodIndex from '../pages/FoodIndex';
@@ -14,6 +15,7 @@ const Main = () => {
     const [food, setFood] = useState(null);
     const [clean, setClean] = useState(null);
     const [other, setOther] = useState(null);
+   
 
 /////////// Needs API URLs below //////////////////////
     const foodURL = "https://dtox-backend.herokuapp.com/food";
