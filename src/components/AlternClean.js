@@ -52,8 +52,6 @@ const AlternClean = (props) => {
     
     ///////////// FUNCTION TO DELETE AN ALT ///////////////////
     const deleteAlt = async (id) => {
-        console.log("This is the id", id)
-        console.log("this is the url", altURL)
         
         await fetch(altURL + id, {
           method: "DELETE",
@@ -79,15 +77,12 @@ const AlternClean = (props) => {
     //console.log(cleanAlt);
     
 
-    ////////// function to delete an alternative ////////////
-    // const removeAlt = (id) => {
-    //     deleteAlt(id);
-    //     
-    // }
+    
 
     //////// Loaded function ///////
     const loaded = () => {
         return cleanAlt.map((alt) => {
+            //console.log("image url", alt.img)
             return (
                 <div key={alt._id} className="altDiv">
                     <h3>{alt.name}</h3>
