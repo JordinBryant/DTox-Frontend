@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
 * {
     margin: 0px;
-    padding: 2px;
+    padding: 2px; 
+
 }
 
 nav {
@@ -16,7 +17,7 @@ nav {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 
-    #homepage {
+    .dtox {
         text-shadow: 0px 4px 4px #282828;
     }
 
@@ -64,4 +65,18 @@ nav {
     color: white;
     margin: 20vh 20vh 20vh 20vh;
     font-family: 'Source Code Pro', monospace;
+}
+
+#foodPage-container {
+    background-color:rgb(234, 255, 234);
+    display: grid;
+    #foodQuote {
+        color: grey;
+        font-family: 'Passions Conflict', cursive;
+        text-align: center;
+    }
+    #food {
+        
+    }
+
 }
