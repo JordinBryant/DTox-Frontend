@@ -4,11 +4,17 @@ import AlternFood from '../components/AlternFood';
 
 const FoodIndex = (props) => {
 
+
     const [foodAlt, setFoodAlt] = useState(null)
 
     const altURL = "https://dtox-backend.herokuapp.com/altfood"
 
     /////// LOADING FUNCTION TO DISPLAY JUST THE CHEMICAL NAMES ///////
+
+    
+    
+/////// LOADING FUNCTION TO DISPLAY JUST THE CHEMICAL NAMES ///////
+
     const loaded = () => {
         return props.food.map((chem) => {
             return (
@@ -51,6 +57,22 @@ const FoodIndex = (props) => {
             </section>
         </div>
     )
+
+    
+
+
+
+  return (
+    <div>
+        <h1>Chemicals Commonly Found in Foods</h1>
+        <h3>Select a chemical below to see more!</h3>
+        {props.food ? loaded() : loading()}
+        <h1>Healthy Alternative Options</h1>
+        <AlternFood />
+
+    </div>
+  )
+
 }
 
 export default FoodIndex;
