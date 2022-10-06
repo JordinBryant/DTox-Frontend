@@ -36,7 +36,7 @@ Each chemical in the list can be clicked on, which will lead users to a page tha
 - Netlify
 
 # Getting Started
-Click [here]() to view the App and start by choosing between Food, Cleaning Products, and Other Household / Personal Products.
+Click [here](https://633f25ca21e8fa00b251966b--fanciful-paletas-4e551f.netlify.app/food/633b22466fcced9476e4d227) to view the App and start by choosing between Food, Cleaning Products, and Other Household / Personal Products.
 
 ## Future Enhancements
 
