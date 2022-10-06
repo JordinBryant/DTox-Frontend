@@ -15,23 +15,23 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    // border-top-right-radius: 20px;
+    // border-top-left-radius: 20px;
+    // border-bottom-left-radius: 20px;
+    // border-bottom-right-radius: 20px;
 
     .dtox {
         text-shadow: 0px 4px 4px #282828;
     }
 
     a {
-        color: black;
+        color: white;
         font-family: 'Source Code Pro', monospace;
         font-size: 20px;
         margin: auto 50px;
 
         :hover {
-            color: white;
+            color: black;
             font-weight: 600;
         }
     }
@@ -46,12 +46,12 @@ nav {
     h5 {
         font-family: 'Source Code Pro', monospace;
         font-weight: bold;
-        font-size: 40px;
+        font-size: 25px;
     }
 
     p {
         font-family: 'Source Code Pro', monospace;
-        font-size: 30px
+        font-size: 15px
     }
 }
 
@@ -136,7 +136,7 @@ nav {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        padding: 5px;
+        padding: 10px;
         
     }
 }
@@ -157,10 +157,28 @@ nav {
     height: 400px;
     border-radius: 90px;
     object-fit: cover;
+    display: block;
+        margin-left: auto;
+        margin-right: auto;
 
 }
 
-
+.altDiv {
+    button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(19, 88, 26, 0.515);
+        border-radius: 30px;
+        border-width: 0;
+        color: white;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 7px;
+        padding: 10px;
+    }
+}
 
 
 
@@ -277,17 +295,21 @@ nav {
 }
 
 .showContainer {
-    background: linear-gradient(0.25turn, #c4d6ed, #e8e7e7, #d5f2bf);
+    // background: linear-gradient(0.25turn, #ffffff, #e8e7e7, #d5f2bf);
+    background-image: linear-gradient(white, rgb(189, 228, 189));
     text-align: left;
     font-family: 'Quicksand', sans-serif;
     h1 {
         font-size: 40px;
         margin: 20px 60px;
         text-align: center;
+        background-color: rgba(123, 228, 133, 0.1);
+    color: grey
     }
     h5 {
         font-size: 20px;
         margin: 60px 60px;
         font-family: 'Judson', serif;
+        color: grey
     }
 }
