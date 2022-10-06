@@ -91,10 +91,10 @@ const AlternClean = (props) => {
             //console.log("image url", alt.img)
             return (
                 <div key={alt._id} className="altDiv">
-                    <h3>{alt.name}</h3>
-                    <h6>{alt.description}</h6>
-                    <img src={alt.img} alt={alt.name}/>
-                    <button onClick={() => {deleteAlt(alt._id)}}>
+                    <h3 id="altname">{alt.name}</h3>
+                    <h6 id="altdescription">{alt.description}</h6>
+                    <img id="foodimg" src={alt.img} alt={alt.name}/>
+                    <button id="deletebtn" onClick={() => {deleteAlt(alt._id)}}>
                         DELETE
                     </button>
                 </div>
@@ -108,8 +108,7 @@ const AlternClean = (props) => {
       };
     
   return (
-    <section>
-        <h2>You can keep track of them here:</h2>
+    <section id="altsection">
         <form onSubmit={handleSubmit}>
             <input 
                 type="text"
@@ -132,7 +131,7 @@ const AlternClean = (props) => {
                 placeholder="image url"
                 onChange={handleChange}
             />
-            <input 
+            <input id="submitAlt"
                 type="submit"
                 value="Create Alternative"
             />
