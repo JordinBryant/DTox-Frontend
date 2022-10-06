@@ -20,6 +20,11 @@ const AlternOther = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+       
+        if(!props.user) {
+            alert('You must be logged in');
+            return; //immediately exit the function!
+        }
         createAlt(newForm)
         setNewForm({
             name: "",
