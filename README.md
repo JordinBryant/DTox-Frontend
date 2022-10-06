@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# DTox
+A web app to help inform users on what toxic chemicals may be in their everyday lives.  We break it down into three types of products: 
+- Food
+- Cleaning Supplies
+- Other Household or Beauty Products
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+As users enter the app they will be able to click on one of the three categories above through the navigation bar.  They will then be directed to a list of chemicals found in those products as well as a section to keep track of alternatives products that don't contain these chemicals. Users can create, read, and delete these alternatives.
 
-## Available Scripts
+Each chemical in the list can be clicked on, which will lead users to a page that describes the chemical, and lists a few products that contain that specific chemical.
 
-In the project directory, you can run:
+# Developers
+1. Jenna Parker
+2. Kelly Nelson
+3. Jordin Bryant
 
-### `npm start`
+# Screenshots
+### Landing Page:
+![](Photos%20for%20readme/Screen%20Shot%202022-10-06%20at%2010.20.50%20AM.png)
+### List of chemicals and healthy alternatives:
+![index page](Photos%20for%20readme/Screen%20Shot%202022-10-06%20at%2010.32.17%20AM.png)
+### Chemical Show Page:
+![show page](Photos%20for%20readme/Screen%20Shot%202022-10-06%20at%2010.33.02%20AM.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Technologies Used
+- MERN stack 
+   - Mongoose / MongoDB
+   - Express.js
+   - React.js
+   - Node.js
+- JavaScript
+- CSS
+- Sass
+- FireBase AUTH
+- Postman
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Getting Started
+Click [here]() to view the App and start by choosing between Food, Cleaning Products, and Other Household / Personal Products.
 
-### `npm test`
+## Future Enhancements
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
