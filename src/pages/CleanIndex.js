@@ -12,7 +12,7 @@ const CleanIndex = (props) => {
         return (
         <div key={chem._id} className="chemical">
             <Link to={`/clean/${chem._id}`}>
-                <h4>{chem.chemical}</h4>
+                <h4 id="allchemicals">{chem.chemical}</h4>
             </Link>
         </div>
         )
@@ -26,12 +26,18 @@ const loading = () => {
 
 return (
 <div>
-    <h1>Chemicals Commonly Found in Cleaning Products</h1>
-    <h3>Select a chemical below to see more!</h3>
+    <h1 id="Quote">"Change before you have to." -Jack Welch</h1>
+    <div id="Page-container">
+    <section id="chemicalss">
+    <h1 id="chemm">Commonly Found Chemicals in Cleaning Products</h1>
     {props.clean ? loaded() : loading()}
-    <h1>Healthy Alternative Options</h1>
+    </section>
+    <section id="space"></section>
+    <section id="Altsection">
+    <h1 id="AltTitle">Healthy Alternative Options</h1>
     <AlternClean />
-
+    </section>
+    </div>
 </div>
 )
 }
