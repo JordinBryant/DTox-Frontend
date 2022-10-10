@@ -1,4 +1,5 @@
 import React from 'react'
+import AlternClean from '../components/AlternClean';
 
 
 const CleanShow = (props) => {
@@ -26,12 +27,18 @@ const CleanShow = (props) => {
         <div className="showDiv">
             <h1>{chemical}</h1>
             <h5>{description}</h5>
+            <h1>Products that contain this toxin:</h1>
             <div className="productContainer">
+                
                 {productList}
             </div>
         </div>
-        
+        <section id="Altsection">
+    <h1 id="AltTitle">Healthy Alternative Options</h1>
+    <AlternClean />
+    </section>
     </div>
+    
   )
 }
 

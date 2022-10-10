@@ -1,4 +1,5 @@
 import React from 'react'
+import AlternFood from '../components/AlternFood';
 
 
 const FoodShow = (props) => {
@@ -29,11 +30,15 @@ const FoodShow = (props) => {
         <div className="showDiv">
             <h1>{chemical}</h1>
             <h5>{description}</h5>
+            <h1>Products that contain this toxin:</h1>
             <div className="productContainer">
                 {productList}
             </div>
         </div>
-        
+        <section id="Altsection">
+                <h1 id="AltTitle">Healthy Alternative Options</h1>
+                <AlternFood />
+            </section>
     </div>
   )
 }

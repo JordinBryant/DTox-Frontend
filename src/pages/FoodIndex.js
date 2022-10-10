@@ -5,13 +5,6 @@ import AlternFood from '../components/AlternFood';
 const FoodIndex = (props) => {
 
 
-    const [foodAlt, setFoodAlt] = useState(null)
-
-    const altURL = "https://dtox-backend.herokuapp.com/altfood"
-
-    /////// LOADING FUNCTION TO DISPLAY JUST THE CHEMICAL NAMES ///////
-
-    
     
 /////// LOADING FUNCTION TO DISPLAY JUST THE CHEMICAL NAMES ///////
 
@@ -31,15 +24,6 @@ const FoodIndex = (props) => {
         return <h1>Loading . . .</h1>
     }
 
-    const getAlt = async () => {
-        const response = await fetch(altURL);
-        const data = await response.json();
-        setFoodAlt(data);
-    }
-
-    useEffect(() => {
-        getAlt();
-    }, [])
 
 
 
@@ -52,10 +36,7 @@ const FoodIndex = (props) => {
                 {props.food ? loaded() : loading()}
             </section>
             <section id="space"></section>
-            <section id="Altsection">
-                <h1 id="AltTitle">Healthy Alternative Options</h1>
-                <AlternFood foodAlt={foodAlt} />
-            </section>
+            
             </div>
         </div>
     )
