@@ -35,10 +35,7 @@ const OtherIndex = (props) => {
           {props.other ? loaded() : loading()}
         </section>
         <section id="space"></section>
-        <section id="Altsection">
-          <h1 id="AltTitle">Healthy Alternative Options</h1>
-          <AlternOther />
-        </section>
+        
       </div>
     </div>
   )

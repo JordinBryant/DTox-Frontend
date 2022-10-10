@@ -33,10 +33,7 @@ return (
     {props.clean ? loaded() : loading()}
     </section>
     <section id="space"></section>
-    <section id="Altsection">
-    <h1 id="AltTitle">Healthy Alternative Options</h1>
-    <AlternClean />
-    </section>
+    
     </div>
 </div>
 )
