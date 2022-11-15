@@ -60,7 +60,7 @@ function Main(props) {
 
             ///// FOOD INDEX ROUTE ////
                 <Route exact path="/food">
-                    <FoodIndex user={props.user} food={food} />
+                    <FoodIndex user={props.user} setFood={setFood} food={food} />
                 </Route>
             ///// FOOD SHOW ROUTE ////
                 <Route path="/food/:id" render={(rp) => {
