@@ -9,7 +9,7 @@ const AlternOther = (props) => {
 
     const [otherAlt, setOtherAlt] = useState(null)
 
-    const altURL = "https://dtox-backend.herokuapp.com/altother/"
+    const altURL = "https://dtox-backend-2.herokuapp.com/altother/"
 
 //////// NEEDS TO RECEIVE THE LIST OF ALTERNATIVES FROM THE API AS PROPS PASSED DOWN FROM THE SHOW PAGE.  THEN WE NEED TO MAP OVER THEM AND DISPLAY THEM BELOW THE FORM.//////////////
     

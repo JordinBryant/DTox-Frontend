@@ -9,7 +9,7 @@ const AlternClean = (props) => {
 
     const [cleanAlt, setCleanAlt] = useState(null)
 
-    const altURL = "https://dtox-backend.herokuapp.com/altclean/"
+    const altURL = "https://dtox-backend-2.herokuapp.com/altclean/"
     
 
     const handleChange = (e) => {
