@@ -18,9 +18,9 @@ function Main(props) {
 
 
     /////////// Needs API URLs below //////////////////////
-    const foodURL = "https://dtox-backend.herokuapp.com/food";
-    const cleanURL = "https://dtox-backend.herokuapp.com/clean";
-    const otherURL = "https://dtox-backend.herokuapp.com/other";
+    const foodURL = "https://dtox-backend-2.herokuapp.com/food";
+    const cleanURL = "https://dtox-backend-2.herokuapp.com/clean";
+    const otherURL = "https://dtox-backend-2.herokuapp.com/other";
 
     ////////// FUNCTIONS TO FETCH THE DATA FROM THE API /////////    
     const getFood = async () => {
